@@ -13,7 +13,7 @@ module.exports = function (ctx, done) {
 
     //"assigned", "unassigned", "labeled", "unlabeled", "opened", "closed", or "reopened"
 
-    var message = "hi";
+    var message = null;
     switch(received_data.action ) {
         case "opened":
             message = "We have new opened issue. Help us! "+received_data.issue.html_url;
